@@ -1,0 +1,448 @@
+/* filter */
+.filter{
+    background-color: #7FC7AF;
+    min-height: 211px;
+    padding: 30px 0 15px 0;
+    z-index: 0;
+}
+.filter__content {
+    min-height: 200px;
+    background-color: #fff;
+    padding: 20px 0px;
+    border-radius: 50px;
+    width: 100%;
+}
+.filter__form {
+    position: relative;
+    min-width: 100%;
+    padding: 20px 50px;
+}
+
+.card__title{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* верхний блок выбрать объект и показать */
+.form__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.form__info-title {
+    font-size: 24px;
+    font-weight: 400;
+}
+.form__info-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+.form__delete {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    min-width: 100%;
+}
+.form__delete-info {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+/* средний блок со всем содержимым */
+.form__data {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.select-text {
+	position: absolute;
+	top: 8px;
+	left: 15px;
+	color: #6C6C6C;
+	font-size: 14px;
+}
+
+.zone {
+    font-family: 'DaysOne';
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: 2px solid #000;
+	border-radius: 20px;
+	background-color: #fff;
+	padding: 34px 35px 8px 15px;
+	outline: none;
+	cursor: pointer;
+	font-size: 18px;
+    max-height: 65px;
+    width: 100%;
+}
+
+.zone-sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DaysOne';
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	border-radius: 20px;
+	background-color: #fff;
+	padding: 18px 65px;
+	outline: none;
+	cursor: pointer;
+	font-size: 18px;
+    max-height: 60px;
+    min-width: 310px;
+}
+.select-wrapper_sort::before {
+	content: "";
+	position: absolute;
+	background: url('../img/select-arrow.svg') no-repeat;
+	top: 50%;
+	right: 43px;
+	transform: translateY(-50%);
+	width: 17px;
+    height: 9px;
+	display: block;
+	pointer-events: none;
+}
+
+.select::-ms-expand {
+	display: none;
+}
+.select:focus {
+	outline: none;
+}
+.select-wrapper_appartment {
+    position: relative;
+    max-height: 65px;
+}
+.select-wrapper_sort {
+    position: relative;
+    max-height: 60px;
+}
+.select-sort-wrapper {
+	position: relative;
+    max-height: 60px;
+    max-width: 310px;
+}
+.select-parking-wrapper {
+	position: relative;
+    max-height: 60px;
+    width: 100% !important;
+}
+
+.select-wrapper {
+	position: relative;
+    max-height: 65px;
+    max-width: 100%;
+}
+.select-wrapper::before {
+	content: "";
+	position: absolute;
+	background: url('../img/select-arrow.svg') no-repeat;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	width: 17px;
+    height: 9px;
+	display: block;
+	pointer-events: none;
+}
+.size {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.form__price-area {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    min-height: 65px;
+}
+
+/* цена */
+.price,
+.area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 15px;
+    min-width: 285px;
+    max-width: 100%;
+    width: 100%;
+    height: 65px;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+.input-title {
+    font-size: 14px;
+    line-height: 10px;
+    color: #6C6C6C;
+}
+.price-input,
+.area-input{
+    display: flex;
+    justify-content: space-between;
+}
+.input-label {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    color:#6C6C6C;
+    gap: 10px;
+    font-size: 18px;
+}
+.input-text,
+.input-area {
+    border: none;
+    width: 100%;
+    max-width: 52px;
+    width: 100%;
+    font-family: "DaysOne";
+    color:#000;
+    font-size: 18px;
+    border: none;
+}
+.input-text,
+.input-area:focus {
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* появляющийся блок */
+.hidden {
+    display: flex;
+}
+.filter-content{
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    display: flex;
+}
+
+/* filter-card */
+.filter-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #000;
+    max-width: 310px;
+    width: 100%;
+    min-height: 415px;
+    border-radius: 30px;
+    padding: 20px 50px;
+    overflow: hidden;
+    gap: 15px;
+}
+/* Стили для анимации появления и исчезновения элементов */
+/* Начальный стиль элемента */
+.single-goods {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Стиль элемента при появлении */
+.single-goods.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.card__img {
+    display: flex;
+    justify-content: center;
+}
+.filter__card-title{
+    font-size: 20px;
+
+}
+.filter__card-img{
+    max-width: 100%;
+    max-height: 210px;
+    object-fit: cover;
+}
+.filter__card-price{
+    font-size: 24px;
+
+}
+.filter__card-flat {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.filter__card-area{
+    font-size: 14px;
+    color: #6C6C6C;
+    margin-top: 23px;
+
+}
+
+/* чекбоксы */
+.checkbox-btn {
+	display: inline-block;
+	user-select: none;
+	position: relative;
+}
+.checkbox-btn input[type=checkbox] {
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.checkbox-number {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	cursor: pointer;
+    font-size: 18px;
+    line-height: 0;
+	border: 2px solid #000;
+	border-radius: 20px;
+	transition: background 0.2s ease;
+    width: 65px;
+    height: 65px;
+}
+ .checkbox-studio {
+    width: 92px;
+    height: 65px;
+ }
+ .checkbox-btn input[type=checkbox]:checked + .checkbox-number {
+	background: rgb(0, 0, 0, 0.15);
+    transition: background 0.2s ease;
+}
+.checkbox-btn:hover {
+	background: rgb(0, 0, 0, 0.15);
+    border-radius: 20px;
+    transition: background 0.2s ease;
+}
+.checkbox-btn input[type=checkbox]:active:not(:disabled) + .checkbox-number {
+	background: rgb(0, 0, 0, 0.1);
+	color: #000;
+    transition: color 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+.filter-sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    font-size: 18px;
+    max-width: 310px;
+    padding: 18px;
+    background-color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 30px;
+}
+
+
+
+
+.cards__wpapper-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0 30px 0;
+    }
+    .card__content-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 20px;
+        border: 2px solid #000;
+        padding: 20px 40px;
+        width: 310px;
+        min-height: 415px;
+        background-color: #ffffff;
+    }
+    .card__title {
+        display: flex;
+        justify-content: space-between;
+    }
+    .filter__card-title {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .filter__card-icon {
+
+    }
+    .card__img {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+    .filter__card-img {
+        margin: 15px 0 20px 0;
+        max-height: 170px;
+        max-width: 210px;
+        height: 100%;
+    }
+    .filter__card-img {
+    }
+    .filter__card-price {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .filter__card-flat {
+        font-size: 18px;
+        margin-bottom: 23px;
+    }
+    .filter__card-area {
+        color: #6C6C6C;
+        font-size: 14px;
+    }
+    .favorite-button{
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+@media (max-width: 1299px) {
+    .form__data {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 480px) {
+    
+    .filter__form {
+        padding: 25px 10px;
+    }
+    .form__info-title {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .form__info-link {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

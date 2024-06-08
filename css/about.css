@@ -1,0 +1,68 @@
+.about-title {
+    font-size: 48px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+.cards-content {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.about-card {
+    height: 186px;
+    padding: 30px 45px;
+    max-width: 310px;
+    font-weight: 400;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #7FC7AF;
+}
+.card-title {
+    font-size: 32px;
+    font-weight: 400;
+}
+.card-text {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* about-advantages */
+.about-advantages {
+    margin-top: 40px;
+}
+.advantages-title {
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.advantages-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:1299px) {
+    .about {
+        margin-top: 140px;
+    }
+    .about-title {
+        text-align: justify;
+    }
+    .cards-content{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:1000px) {
+    .about-card {
+        max-width: 50%;
+    }
+}
+
+@media (max-width:744px) {
+    .about-title {
+        font-size: 38px;
+    }
+    .about-card {
+        max-width: 100%;
+    }
+}
