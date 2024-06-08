@@ -1,0 +1,597 @@
+
+/* banner */
+.banner {
+    position: relative;
+    padding-top: 29px;
+}
+.banner-slider {
+  position: relative;
+  width: 100%;
+  min-height: 620px;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 2px solid #fff;
+}
+.slider {
+    width: 100%;
+    min-height: 620px;
+    display: flex;
+}
+.slide {
+    display: flex;
+    padding: 50px;
+    min-width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+}
+.slide-content {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+.slide-info {
+    color: #fff;
+}
+.slide-title {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+.slide-text {
+    font-size: 32px;
+}
+.slide-1 {
+    background: url('../img/slide-1-1.jpg');
+}
+.slide-2 {
+    background: url('../img/slide-2.jpg');
+}
+.slide-3 {
+    background: url('../img/slide-3.jpg');
+}
+.slide-4 {
+    background: url('../img/slide-4.jpg');
+}
+.slider-button {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    bottom: 50px;
+    right: 50px;
+}
+.prev-button,
+.next-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* filter */
+.filter{
+    background-color: #7FC7AF;
+    min-height: 211px;
+    margin-top: -50px;
+    padding: 80px 0;
+    z-index: 0;
+}
+.filter__content {
+    min-height: 200px;
+    background-color: #fff;
+    padding: 20px 0px;
+    border-radius: 50px;
+    width: 100%;
+}
+.filter__form {
+    position: relative;
+    min-width: 100%;
+    padding: 20px 50px;
+}
+
+/* верхний блок выбрать объект и показать */
+.form__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.form__info-title {
+    font-size: 24px;
+    font-weight: 400;
+}
+.form__info-link-index {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+.form__delete {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.form__delete-info {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.reset-form {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    z-index: 99;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+/* средний блок со всем содержимым */
+.form__data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.select-text {
+	position: absolute;
+	top: 8px;
+	left: 15px;
+	color: #6C6C6C;
+	font-size: 14px;
+}
+.zone {
+	width: 100%;
+    font-family: 'DaysOne';
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: 2px solid #000;
+	border-radius: 20px;
+	background-color: #fff;
+	padding: 34px 35px 8px 15px;
+	outline: none;
+	cursor: pointer;
+	font-size: 18px;
+    max-height: 65px;
+}
+.select::-ms-expand {
+	display: none;
+}
+.select:focus {
+	outline: none;
+}
+.select-wrapper {
+	position: relative;
+    max-height: 65px;
+}
+.select-wrapper::before {
+	content: "";
+	position: absolute;
+	background: url('../img/select-arrow.svg') no-repeat right center / cover;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	width: 15px;
+    height: 8px;
+	display: block;
+	pointer-events: none;
+}
+.size {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.form__price-area {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    min-height: 65px;
+}
+
+/* цена */
+.price,
+.area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 15px;
+    min-width: 285px;
+    max-width: 100%;
+    width: 100%;
+    height: 65px;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+.input-title {
+    font-size: 14px;
+    line-height: 10px;
+    color: #6C6C6C;
+}
+.price-input,
+.area-input{
+    display: flex;
+    justify-content: space-between;
+}
+.input-label {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    color:#6C6C6C;
+    gap: 10px;
+    font-size: 18px;
+}
+.input-text,
+.input-area {
+    border: none;
+    width: 100%;
+    max-width: 52px;
+    width: 100%;
+    font-family: "DaysOne";
+    color:#000;
+    font-size: 18px;
+    border: none;
+}
+.input-text,
+.input-area:focus {
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* появляющийся блок */
+.hidden {
+    display: none;
+}
+.filter-content{
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* filter-card */
+.filter-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #000;
+    max-width: 310px;
+    width: 100%;
+    min-height: 415px;
+    border-radius: 30px;
+    padding: 20px 50px;
+    overflow: hidden;
+    gap: 15px;
+}
+.card__img {
+    display: flex;
+    justify-content: center;
+}
+.filter__card-title{
+    font-size: 20px;
+
+}
+.filter__card-img{
+    max-width: 100%;
+    max-height: 210px;
+    object-fit: cover;
+}
+.filter__card-price{
+    font-size: 24px;
+
+}
+.filter__card-flat {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.filter__card-area{
+    font-size: 14px;
+    color: #6C6C6C;
+    margin-top: 23px;
+
+}
+
+/* чекбоксы */
+.checkbox-btn {
+	display: inline-block;
+	user-select: none;
+	position: relative;
+}
+.checkbox-btn input[type=checkbox] {
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.checkbox-number {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	cursor: pointer;
+    font-size: 18px;
+    line-height: 0;
+	border: 2px solid #000;
+	border-radius: 20px;
+	transition: background 0.2s ease;
+    width: 65px;
+    height: 65px;
+}
+ .checkbox-studio {
+    width: 92px;
+    height: 65px;
+ }
+.checkbox-btn input[type=checkbox]:checked + .checkbox-number {
+	background: rgb(0, 0, 0, 0.15);
+    transition: background 0.2s ease;
+}
+.checkbox-btn:hover {
+	background: rgb(0, 0, 0, 0.15);
+    border-radius: 20px;
+    transition: background 0.2s ease;
+}
+.checkbox-btn input[type=checkbox]:active:not(:disabled) + .checkbox-number {
+	background: rgb(0, 0, 0, 0.1);
+	color: #000;
+    transition: color 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+/* objects */
+.objects {
+    margin-top: -50px;
+    z-index: 1;
+}
+.objects__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card-1 {
+    background: url('../img/Flight.jpg');
+}
+.card-2 {
+    background: url('../img/Fakel.jpg');
+}
+.card-3 {
+    background: url('../img/Garden.jpg');
+}
+.card-4 {
+    background: url('../img/Event.jpg');
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.objects-card {
+    display: flex;
+    align-items: center;
+    min-height: 422px;
+    max-width: 640px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    border-radius: 50px;
+    flex: 1 0 45%;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+.card-link {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 12px 7px;
+    text-decoration: none;
+    max-width: 140px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.card-link__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.card-info {
+    color: #fff;
+    font-weight: 400;
+}
+.card-title {
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 400;
+}
+.card-address {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.card-metro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+.card-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.card-text {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 100;
+}
+.card-price {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* geography */
+.geography {
+    background-color: #5C9884;
+    min-height: 211px;
+    margin-top: -50px;
+    padding: 80px 0;
+    z-index: 0;
+}
+.geography-title {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* map */
+.map {
+    margin-top: -50px;
+    padding-bottom: 30px;
+}
+.map__conent {
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+@media (max-width:1299px){
+    
+    .banner {
+        margin-top: 100px;
+    }
+
+    .slide-info {
+        max-width: 60%;
+    }
+
+    .select-wrapper{
+        width: 100%;
+    }
+    .form__price-area{
+        width: 100%;
+    }
+    .price,
+    .area{
+        min-width: 45%;
+        width: 100%;
+    }
+
+    .geography-title {
+        margin-left: 25px;
+    }
+
+    .footer {
+        padding: 62px 25px;
+    }
+    .footer__content {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+@media (max-width:744px){
+    .slide-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .slide-title {
+        font-size: 36px;
+    }
+    .slide-text {
+        font-size: 21px;
+    }
+
+    .filter__form {
+        position: relative;
+        min-width: 100%;
+        padding: 20px 25px;
+    }
+    .filter__content {
+        max-width: 1300px;
+        min-height: 200px;
+        background-color: #fff;
+        padding: 20px 25px;
+    }
+    .filter-card {
+        min-width: 100%;
+    
+    }
+    .form__info-title {
+        font-size: 18px;
+    }
+    .form__info-link {
+        font-size: 18px;
+    }
+
+
+    .size {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .form__delete-info {
+        font-size: 16px;
+    }
+    .form__price-area{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
+    .objects-card {
+        min-width: 100%;
+    }
+
+}
+@media (max-width:480px) {
+    .slide {
+        padding: 20px 25px;
+    }
+    .slide-content {
+        align-items: flex-start;
+    }
+    .slide-title {
+        font-size: 36px;
+    }
+    .slide-text {
+        font-size: 16px;
+    }
+    .slider-button {
+        bottom: 20px;
+        right: 25px;
+    }
+
+    .form__info-title {
+        font-size: 16px;
+    }
+    .form__info-link-index{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+    .objects-card {
+        padding: 20px 25px;
+    }
+    .card-link {
+        align-self: flex-start;
+    }
+    .card-metro {
+        flex-wrap: wrap;
+    }
+} 
